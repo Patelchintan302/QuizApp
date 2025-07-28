@@ -20,6 +20,6 @@ class QuestionActivity : AppCompatActivity() {
             insets
         }
         val questionList = Constants.getQuestions()
-        Log.d("QuestionListSize", "$questionList.size")
+        Log.d("QuestionListSize", "$questionList.size") // for logcat testing of Question List 
     }
 }
