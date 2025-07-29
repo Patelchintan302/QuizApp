@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginTop="12dp"
-                android:textColor="#E4626262"
+                android:textColor="@color/gray"
                 android:text="@string/enter_your_name"/>
 
             <com.google.android.material.textfield.TextInputLayout
