@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quiz.ui.QuestionActivity
+import com.example.quiz.utils.Constants
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         startButton.setOnClickListener {
             if(!editTextName.text.toString().isEmpty()) {
                 val intent = Intent(this, QuestionActivity::class.java).also{
-                    it.putExtra("name", editTextName.text.toString())
+                    it.putExtra(Constants.USER_NAME, editTextName.text.toString())
                     startActivity(it)
                     finish()
                 }
